@@ -1,0 +1,22 @@
+{
+   "type": "postgres",
+   "host": "localhost",
+   "port": 5432,
+   "username": "cesar",
+   "password": "1702",
+   "database": "sms",
+   "synchronize": false,
+   "logging": false,
+   "entities": ["../**/*.entity.{ts,js}"],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
